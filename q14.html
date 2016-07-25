@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Enter your first name: <input type="text" id="fname" onfocus="appear()"onblur="myFunction()">
+<p id="exp1" style="display:none"> "your name will become uppercase"</p>
+</br>
+enter your last name: <input type="text" id="lname" onblur="otherFunction()" onfocus="appear2()">
+</br>
+<p id="exp2" style="display:none"> Your last name will become lowercase"</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+
+function otherFunction() {
+    var z = document.getElementById("lname");
+    z.value = z.value.toLowerCase();
+}
+
+function appear() {
+	var y = document.getElementById("exp1");
+	y.value = y.style.display = "block"}
+
+
+function appear2() {
+	var y = document.getElementById("exp2");
+	y.value = y.style.display = "block"}
+
+</script>
+</body>
+</html>
